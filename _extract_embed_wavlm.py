@@ -68,7 +68,7 @@ def main(args):
     # Collect files for each dataset
     d_utt = {}
     d_utt["Libri-train-clean-100"] = glob.glob(os.path.join(args.data_dir, "LibriSpeech/train-clean-100/*/*/*.flac"))
-    d_utt["VoiceMOS"] = glob.glob(os.path.join(args.data_dir, "VoiceMOS/DATA/wav/*.wav")"))
+    d_utt["VoiceMOS"] = glob.glob(os.path.join(args.data_dir, "VoiceMOS/DATA/wav/*.wav"))
 
     # Process and filter the TSP dataset (if applicable)
     if "TSP" in d_utt:
